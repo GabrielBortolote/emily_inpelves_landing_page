@@ -13,6 +13,11 @@ module.exports = {
         lighGreen: "#283618",
         darkSkin: "#DDA15E",
         lightSkin: "#BC6C25",
+      },
+      fontFamily: {
+        goudy: ['var(--font-sorts-mill-goudy)'],
+        meow: ['var(--font-meow-script)'],
+        doulaise: ['var(--font-monsieur_la_doulaise)'],
       }
     },
   },

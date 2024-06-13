@@ -1,8 +1,6 @@
-import Image from "next/image";
-
 export default function Home() {
   return <>
-    <section className="h-20 bg-light">
+    <section className="h-20 bg-light font-doulaise">
       Start Section
     </section>
     <section className="h-20 bg-darkGreen">
