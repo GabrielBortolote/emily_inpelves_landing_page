@@ -7,9 +7,10 @@ import BgImage from '@/static/StartPageBackgroundCropped.png';
 
 // svg's
 import CircleFlowers from './CircleFlowers';
+import InkSplash from "@/components/common/InkSplash";
 import ManFace from './ManFace';
-import WomanFace from './WomanFace';
 import Separator from '@/components/common/Separator';
+import WomanFace from './WomanFace';
 
 
 export default function StartSection({}){
@@ -120,6 +121,11 @@ function Background(){
       h-[20%]
       bg-gradient-to-t from-light to-transparent
     '/>
+    <div className='
+      w-[300px] absolute right-0 bottom-0 translate-x-2/4 translate-y-2/4
+    '>
+      <InkSplash fill={theme.extend.colors.darkGreen} />
+    </div>
     <Image
       alt="Grass"
       src={BgImage}
