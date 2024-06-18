@@ -1,8 +1,8 @@
+import StartSection from "@/components/sections/start/StartSection";
+
 export default function Home() {
   return <>
-    <section className="h-20 bg-light font-doulaise">
-      Start Section
-    </section>
+    <StartSection />
     <section className="h-20 bg-darkGreen">
       Specialist Section
     </section>

@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${goudy.variable} ${meow.variable} ${doulaise.variable}`}>
-      <body className={`text-darkGreen font-goudy`}>
+      <body className='text-darkGreen font-goudy'>
         {children}
       </body>
     </html>
