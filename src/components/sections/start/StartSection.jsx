@@ -32,10 +32,14 @@ export default function StartSection({}){
 
 function Introduction(){
   return <>
-    <p className='text-3xl tracking-superWide'>Fisioterapeuta</p>
-    <p className='text-8xl tracking-superWide pt-4'>Pélvica</p>
+    <p className='
+      text-2xl sm:text-3xl tracking-superWide
+    '>Fisioterapeuta</p>
+    <p className='
+      text-6xl sm:text-8xl tracking-superWide pt-4
+    '>Pélvica</p>
     <div className='
-      w-[600px]
+      w-[300px] xs:w-[400px] md:w-[600px]
       pt-14
       relative
       '>
@@ -59,15 +63,19 @@ function Introduction(){
     </div>
     <div className='
       absolute
-      -right-[200px] top-40
-      w-[500px]
+      hidden lg:block
+      top-[200px] right-0
+      translate-x-2/4
+      w-[30%]
     '>
       <ManFace fill={theme.extend.colors.darkGreen}/>
     </div>
     <div className='
-      absolute
-      -left-[200px] top-40
-      w-[550px]
+       absolute
+       hidden lg:block
+       top-[180px] left-0
+       -translate-x-2/4
+       w-[40%]
     '>
       <WomanFace fill={theme.extend.colors.darkGreen}/>
     </div>
@@ -77,24 +85,26 @@ function Introduction(){
 function Presentation(){
   return <>
     <div className="
-      w-[500px]
-      pt-24
+      w-[250px] sm:w-[500px]
+      pt-12 sm:pt-24
       pb-12
     ">
       <Separator fill={theme.extend.colors.darkGreen}/>
     </div>
     <h1 className='
       font-meow
-      text-6xl
+      text-4xl sm:text-6xl
       text-darkGreen
     '>
       Olá,
     </h1>
     <p className='
-      text-2xl text-darkGreen
-      pt-12
+      text-lg sm:text-xl lg:text-2xl 
+      text-darkGreen
+      pt-8 sm:pt-12
+      px-12
       tracking-wider
-      w-[1000px]
+      max-w-[1000px]
       text-center
     '>
       Meu nome é Emily Leal, sou fisioterapeuta, tenho anos de experiência, estou sempre comprometida a trazer a melhor qualidade de vida para os meus pacientes. Tenho anos de experiência em ortopedia e estou migrando minha carreira para fisioterapia pélvica, minha grande paixão.
@@ -122,7 +132,9 @@ function Background(){
       bg-gradient-to-t from-light to-transparent
     '/>
     <div className='
-      w-[300px] absolute right-0 bottom-0 translate-x-2/4 translate-y-2/4
+      w-[200px] lg:w-[300px]
+      absolute right-0 bottom-0
+      translate-x-2/4 translate-y-2/4
     '>
       <InkSplash fill={theme.extend.colors.darkGreen} />
     </div>
