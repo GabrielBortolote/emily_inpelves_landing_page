@@ -99,10 +99,10 @@ function Presentation(){
       Olá,
     </h1>
     <p className='
-      text-lg sm:text-xl lg:text-2xl 
+      text-md `xs:text-lg sm:text-xl lg:text-2xl 
       text-darkGreen
       pt-8 sm:pt-12
-      px-12
+      px-4 xs:px-12
       tracking-wider
       max-w-[1000px]
       text-center
@@ -128,11 +128,11 @@ function Background(){
     <div className='
       absolute
       inset-x-0 bottom-0
-      h-[20%]
+      h-[40%] sm:h-[20%]
       bg-gradient-to-t from-light to-transparent
     '/>
     <div className='
-      w-[200px] lg:w-[300px]
+      w-[150px] lg:w-[250px]
       absolute right-0 bottom-0
       translate-x-2/4 translate-y-2/4
     '>
