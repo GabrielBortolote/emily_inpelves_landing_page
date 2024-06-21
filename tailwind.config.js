@@ -16,8 +16,8 @@ module.exports = {
         light: "#F2F5E0",
         lightGreen: "#606C38",
         darkGreen: "#283618",
-        darkSkin: "#DDA15E",
-        lightSkin: "#BC6C25",
+        darkSkin: "#BC6C25",
+        lightSkin: "#DDA15E",
       },
       fontFamily: {
         goudy: ['var(--font-sorts-mill-goudy)'],

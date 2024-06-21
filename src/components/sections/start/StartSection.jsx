@@ -132,6 +132,7 @@ function Background(){
       bg-gradient-to-t from-light to-transparent
     '/>
     <div className='
+      hidden md:block
       w-[150px] lg:w-[250px]
       absolute right-0 bottom-0
       translate-x-2/4 translate-y-2/4
