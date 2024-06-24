@@ -9,8 +9,8 @@ import Waves from "./Waves";
 export default function ContactSection(){
   return <section className='
     bg-light
-    p-12 md:p-24 lg:p-40 xl:p-48
-    pb-48 xs:pb-56
+    p-[10%]
+    pb-[30%] md:pb-12
     text-darkGreen
     flex flex-col
     justify-center md:justify-start
@@ -21,9 +21,9 @@ export default function ContactSection(){
       flex flex-col
     '>
       <h2 className='
-        text-6xl sm:text-8xl md:text-7xl lg:text-9xl
+        text-4xl xs:text-7xl lg:text-9xl
         font-doulaise
-        pb-12 sm:pb-24
+        pb-8 xs:pb-12 sm:pb-24
         text-center md:text-start
       '>
         Meus contatos
@@ -31,18 +31,17 @@ export default function ContactSection(){
       <ContactInfoItem text="+55 (61) 8183-8132">
         <Phone fill={theme.extend.colors.lightSkin} />
       </ContactInfoItem>
-
       <ContactInfoItem text="emilylealg@gmail.com">
         <Mail fill={theme.extend.colors.lightSkin} />
       </ContactInfoItem>
-
     </div>
     <div className='
       absolute
-      w-[60%] md:w-[40%]
-      right-0 bottom-[15%]
-      translate-x-[55%] md:translate-x-[30%]
-      md:translate-y-[40%]
+      w-[400px] lg:w-[500px]
+      right-0
+      -bottom-[100px]
+      translate-x-[30%]
+      hidden md:block
       z-20
     '>
       <ShinningWomanFace fill={theme.extend.colors.darkGreen} />
@@ -58,8 +57,8 @@ export default function ContactSection(){
     '>
       <Waves fill={[
         theme.extend.colors.darkGreen,
+        theme.extend.colors.lightGreen,
         theme.extend.colors.darkGreen,
-        theme.extend.colors.lightSkin,
       ]} />
     </div>
   </section>
@@ -68,14 +67,15 @@ export default function ContactSection(){
 function ContactInfoItem({children, text}){
   return <div className='
     font-meow
-    text-2xl xs:text-4xl lg:text-5xl
+    text-xl xs:text-3xl sm:text-4xl
     flex flex-row
     items-center
   '>
     <div className='
-      w-16 sm:w-24
+      w-8 xs:w-12 sm:w-24
       flex-grow-0
       pr-2 xs:pr-4
+      shrink-0
     '>
       {children}
     </div>
