@@ -62,7 +62,7 @@ export default function SkillsSection(){
         w-[60%]
         max-w-[500px]
         self-center
-        pb-6
+        py-6
       '>
         <Separator fill={theme.extend.colors.lightSkin} />
       </div>
@@ -82,19 +82,23 @@ function Skills(){
     'Fortalecimento abdominal e dos músculos do assoalho pélvico.',
   ]
 
+  const strongStyles = {
+    fontWeight: 'bold',
+  }
+
   return <>
     {skillSet.map((item, index) => (
       <div key={index} className='
         flex flex-row
         pb-8 md:pb-12
         items-center segunda você co
-        text-xl xl:text-3xl
-      '>
+        text-md xs:text-xl xl:text-3xl
+      ' style={index < 3 ? {...strongStyles} : {}}>
         <div className='
           flex-shrink-0
           w-[30px] xs:w-[60px] md:w-[40px] xl:w-[60px]
           mr-6
-        '>
+        ' style={{fontWeight: 'bold'}}>
           <ElegantItemMark fill={theme.extend.colors.lightSkin} />
         </div>
         {item}

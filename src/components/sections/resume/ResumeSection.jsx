@@ -14,6 +14,7 @@ export default function ResumeSection(){
     flex flex-col
     p-[10%]
     relative
+    overflow-hidden
   '>
     <h2 className='
       font-doulaise
