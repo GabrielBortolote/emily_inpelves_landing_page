@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { theme } from "@/../tailwind.config";
 
 // Images
-import SkillsEmilyImage from '@/static/SkillsSectionImage1.png';
+import SkillsEmilyImage from './SkillsSectionImage1.png';
 
 // SVG's
 import ElegantItemMark from './ElegantItemMark';

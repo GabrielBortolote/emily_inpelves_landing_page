@@ -9,7 +9,7 @@ import Waves from "./Waves";
 export default function ContactSection(){
   return <section className='
     bg-light
-    p-12 md:p-24 lg:p-40 xl:p-48
+    p-12 md:p-24 lg:p-36
     pb-48 xs:pb-56
     text-darkGreen
     flex flex-col

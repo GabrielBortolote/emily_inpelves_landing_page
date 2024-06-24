@@ -2,8 +2,8 @@ import { theme } from "@/../tailwind.config";
 import Image from 'next/image';
 
 // images
-import EmilyImage from '@/static/EmilyInPelves.png';
-import BgImage from '@/static/StartPageBackgroundCropped.png';
+import EmilyImage from './EmilyInPelves.png';
+import BgImage from './StartPageBackground.png';
 
 // svg's
 import CircleFlowers from './CircleFlowers';
